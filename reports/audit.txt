@@ -1,0 +1,19 @@
+AWS IAM Security Audit
+======================
+[HIGH] IAM-001
+User: test-admin-user
+Issue: AdministratorAccess attached
+Recommendation: Review whether full administrative access is required.
+----------------------------------------
+[LOW] IAM-003
+User: test-admin-user
+Issue: User has 2 active access keys
+Recommendation: Reduce to a single active access key where possible.
+----------------------------------------
+[HIGH] IAM-005
+User: test-admin-user
+Issue: Managed policy 'AdministratorAccess' grants wildcard permissions (Action: *, Resource: *)
+Recommendation: Scope this policy down to only the specific actions and resources required.
+----------------------------------------
+
+Total findings: 3

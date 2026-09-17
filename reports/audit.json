@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "high": 2,
+    "medium": 0,
+    "low": 1,
+    "total": 3
+  },
+  "findings": [
+    {
+      "check_id": "IAM-001",
+      "severity": "HIGH",
+      "user": "test-admin-user",
+      "title": "AdministratorAccess attached",
+      "recommendation": "Review whether full administrative access is required."
+    },
+    {
+      "check_id": "IAM-003",
+      "severity": "LOW",
+      "user": "test-admin-user",
+      "title": "User has 2 active access keys",
+      "recommendation": "Reduce to a single active access key where possible."
+    },
+    {
+      "check_id": "IAM-005",
+      "severity": "HIGH",
+      "user": "test-admin-user",
+      "title": "Managed policy 'AdministratorAccess' grants wildcard permissions (Action: *, Resource: *)",
+      "recommendation": "Scope this policy down to only the specific actions and resources required."
+    }
+  ]
+}
